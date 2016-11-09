@@ -2,7 +2,7 @@ package com.cafe.domain;
 /**
  * Value Object
  * @author YJH
- * 2016.11.08.Thu
+ * 2016.11.08.Tue
  */
 public class CafeVO {
 

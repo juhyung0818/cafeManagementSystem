@@ -16,7 +16,11 @@ import com.cafe.controller.CafeController;
 import com.cafe.domain.CafeVO;
 import com.cafe.persistence.CafeDAO;
 
-
+/**
+ * Test source for SQL of cafe
+ * @author YJH
+ * 2016.11.08.Tue
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"file:src/main/webapp/WEB-INF/spring/**/*.xml"})
 public class CafeTest {
