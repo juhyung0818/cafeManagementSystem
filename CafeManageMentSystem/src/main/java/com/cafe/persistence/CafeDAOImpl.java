@@ -17,13 +17,18 @@ public class CafeDAOImpl implements CafeDAO{
 	private String namespace = "com.cafe.mapper.CafeteriaMapper";
 	
 	@Override
-	public void cafeRegister(CafeVO cafe) throws Exception {
+	public void register(CafeVO cafe) throws Exception {
 		session.insert(namespace + ".register",cafe);
 	}
 
 	@Override
 	public List<CafeVO> cafeList() throws Exception {
 		return session.selectList(namespace+".cafeList");
+	}
+
+	@Override
+	public void delete(String cafeName) throws Exception {
+		session.delete(namespace+".delete",cafeName);
 	}
 
 }

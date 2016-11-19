@@ -16,13 +16,18 @@ public class CafeServiceImpl implements CafeService{
 	private CafeDAO cafeDao;
 	
 	@Override
-	public void cafeRegister(CafeVO cafe) throws Exception {
-		cafeDao.cafeRegister(cafe);
+	public void register(CafeVO cafe) throws Exception {
+		cafeDao.register(cafe);
 	}
 
 	@Override
 	public List<CafeVO> cafeList() throws Exception {
 		return cafeDao.cafeList();
+	}
+
+	@Override
+	public void delete(String cafeName) throws Exception {
+		cafeDao.delete(cafeName);
 	}
 
 }

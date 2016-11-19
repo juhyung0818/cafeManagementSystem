@@ -14,5 +14,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="cafeList" resultType="com.cafe.domain.CafeVO">
 		select * from cafeteria
 	</select>
+	
+	<delete id="delete">
+		delete from cafeteria where cafeName=#{cafeName} 
+	</delete>
 
 </mapper>

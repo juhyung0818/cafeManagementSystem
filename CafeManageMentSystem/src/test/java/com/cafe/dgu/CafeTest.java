@@ -25,7 +25,7 @@ import com.cafe.persistence.CafeDAO;
 @ContextConfiguration(locations={"file:src/main/webapp/WEB-INF/spring/**/*.xml"})
 public class CafeTest {
 
-	//CafeDAO생성
+	//CafeDAO
 	@Inject
 	private CafeDAO cafeDao;
 	//log
@@ -42,7 +42,7 @@ public class CafeTest {
 		CafeVO cafe = new CafeVO();
 		cafe.setCafeName("SangRokWon");
 		cafe.setInfo("Hello Big Cafeteria NyamNyam");
-		cafeDao.cafeRegister(cafe);
+		cafeDao.register(cafe);
 	}
 	
 	/**
